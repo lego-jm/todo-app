@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 import styles from "./Header.module.css";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 export default function Header({ filters, setFilter, filter }) {
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   const handleFilterSelected = (filter) => setFilter(filter);
 
   return (
     <header className={styles.header}>
-      <span className={styles.icon}>
-        <BiSolidSun />
-        <BiSolidMoon />
+      <span className={styles.icon} onClick={toggleDarkMode}>
+        {!darkMode ? <BiSolidMoon /> : <BiSolidSun />}
       </span>
       <ul className={styles.list}>
         {filters.map((item, index) => (

@@ -16,6 +16,13 @@
   --color-color4: #838bb2;
 }
 
+html.dark {
+  --color-right-bg: #9494b8;
+  --color-color1: #4c4c79;
+  --color-color3: #191939;
+  --color-black: #fff;
+}
+
 body {
   width: 100vw;
   height: 100vh;

@@ -12,17 +12,34 @@
   display: flex;
   gap: 25px;
   font-size: 1.4rem;
+  color: var(--color-black);
   text-transform: capitalize;
 }
 
 .item {
   cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
 .item.active {
   border-bottom: 3px solid var(--color-white);
+  font-weight: bold;
 }
 
 .icon {
+  display: flex;
+  align-items: center;
   color: var(--color-color3);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.icon:hover {
+  transform: rotate(360deg) scale(1.5);
+  color: var(--color-color4);
 }
