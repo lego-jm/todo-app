@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: var(--color-color1);
+  border-radius: 20px 20px 0 0;
+}
+
+.list {
+  display: flex;
+  gap: 25px;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item.active {
+  border-bottom: 3px solid var(--color-white);
+}
+
+.icon {
+  color: var(--color-color3);
+}

@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+
+.input {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-color2);
+}
+
+.text {
+  font-size: 1.2rem;
+}

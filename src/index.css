@@ -1,13 +1,48 @@
+@font-face {
+  font-family: "neurimboGothicRegular";
+  src: url("./asset/font/omyu_font.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-right-bg: #fce9da;
+  --color-dark-bg: #cacfe3;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-color1: #ffcec7;
+  --color-color2: #ffd0a6;
+  --color-color3: #e098ae;
+  --color-color4: #838bb2;
+}
+
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "neurimboGothicRegular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-right-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  accent-color: var(--color-color4);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
