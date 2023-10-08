@@ -18,7 +18,12 @@ export default function Todo({ todo, onDelete, onUpdate }) {
         onChange={handleUpdate}
         checked={todo.status === "completed"}
       />
-      <label className={styles.text} htmlFor={todo.id}>
+      <label
+        className={`${styles.text} ${
+          todo.status === "completed" ? styles.completed : ""
+        }`}
+        htmlFor={todo.id}
+      >
         {todo.text}
       </label>
       <span className={styles.icon} onClick={handleDelete}>
